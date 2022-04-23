@@ -12,7 +12,7 @@ Tx (transmitter) parses X, Y, Rudder, Throttle values from USB Joystick HID Desc
 
 This repo is a very slight modification of "le3dp" example from [USB Host Shield Library](https://github.com/felis/USB_Host_Shield_2.0) so that it works with the VKBSim Gladiator NXT EVO Joystick.
 
-Currently does not support button presses. If you would like to add this feature, go through the HID Descriptor (pretty messy for buttons) and edit the GamePadEventData struct in vkb.h accordingly.
+Currently does not support button presses. If you would like to add this feature, go through the HID Descriptor (may not be accurate) and edit the GamePadEventData struct in vkb.h accordingly.
 
 ## How to use
 Need 2 Arduinos, 2 APC220 Modules, 1 USB Host Shield
