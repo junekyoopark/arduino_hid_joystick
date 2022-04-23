@@ -14,6 +14,9 @@ Need 2 Arduinos, 2 APC220 Modules, 1 USB Host Shield
 
 Assemble Arduino and USB Host shield. This Arduino runs the Tx. Just open tx_vkb.ino and flash it to the Arduino.
 The other arduino runs Rx. Open rx.ino and flash it to the Arduino.
+
+and of course do not forget to assemble the APC220 modules.
+
 Run the serial monitor on the Rx Arduino and you will see joystick values being streamed.
 
 ## Why?
