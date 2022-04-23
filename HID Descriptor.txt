@@ -1,0 +1,180 @@
+HID Descriptor
+Usage Page: 1 (Generic Desktop Controls)
+Usage: 4 (Joystick)
+Collection 
+Usage Page: 1 (Generic Desktop Controls)
+Report ID: 1
+Usage Page: 1 (Generic Desktop Controls)
+Usage: 48 (Direction-X)
+Report Size: 16
+Report Count: 1
+Logical Minimum: -256
+Logical Maximum: 4095
+Physical Maximum: 4095
+Input: 2 (Data,Variable,Absolute,No Wrap,Linear,Preferred State,No Null Position)
+
+Usage Page: 1 (Generic Desktop Controls)
+Usage: 49 (Direction-Y)
+Report Size: 16
+Report Count: 1
+Logical Minimum: -256
+Logical Maximum: 4095
+Physical Maximum: 4095
+Input: 2 (Data,Variable,Absolute,No Wrap,Linear,Preferred State,No Null Position)
+
+Usage Page: 1 (Generic Desktop Controls)
+Usage: 53 (Rotate-Z)
+Report Size: 16
+Report Count: 1
+Logical Minimum: 0
+Logical Maximum: 2047
+Physical Maximum: 2047
+Input: 2 (Data,Variable,Absolute,No Wrap,Linear,Preferred State,No Null Position)
+
+Usage Page: 1 (Generic Desktop Controls)
+Usage: 50 (Direction-Z)
+Report Size: 16
+Report Count: 1
+Logical Minimum: 0
+Logical Maximum: 2047
+Physical Maximum: 2047
+Input: 2 (Data,Variable,Absolute,No Wrap,Linear,Preferred State,No Null Position)
+
+Usage Page: 1 (Generic Desktop Controls)
+Usage: 51 (Rotate-X)
+Report Size: 16
+Report Count: 1
+Logical Minimum: 0
+Logical Maximum: 1023
+Physical Maximum: 1023
+Input: 2 (Data,Variable,Absolute,No Wrap,Linear,Preferred State,No Null Position)
+
+Usage Page: 1 (Generic Desktop Controls)
+Usage: 52 (Rotate-Y)
+Report Size: 16
+Report Count: 1
+Logical Minimum: 0
+Logical Maximum: 1023
+Physical Maximum: 1023
+Input: 2 (Data,Variable,Absolute,No Wrap,Linear,Preferred State,No Null Position)
+
+Usage Page: 1 (Generic Desktop Controls)
+Usage: 54 (Slider)
+Report Size: 16
+Report Count: 1
+Logical Minimum: 0
+Logical Maximum: 2047
+Physical Maximum: 2047
+Input: 2 (Data,Variable,Absolute,No Wrap,Linear,Preferred State,No Null Position)
+
+Usage Page: 1 (Generic Desktop Controls)
+Usage: 55 (Dial)
+Report Size: 16
+Report Count: 1
+Logical Minimum: 0
+Logical Maximum: 2047
+Physical Maximum: 2047
+Input: 2 (Data,Variable,Absolute,No Wrap,Linear,Preferred State,No Null Position)
+
+Usage Page: 9 (Buttons)
+Usages (1-128): Button 1 (Primary), Button 2 (Secondary), Button 3 (Tertiary), Button 4, Button 5, 
+Unknown, Unknown, Unknown, Unknown, Unknown, Unknown, Unknown, Unknown, Unknown, 
+Unknown, Unknown, Unknown, Unknown, Unknown, Unknown, Unknown, Unknown, Unknown, 
+Unknown, Unknown, Unknown, Unknown, Unknown, Unknown, Unknown, Unknown, Unknown, 
+Unknown, Unknown, Unknown, Unknown, Unknown, Unknown, Unknown, Unknown, Unknown, 
+Unknown, Unknown, Unknown, Unknown, Unknown, Unknown, Unknown, Unknown, Unknown, 
+Unknown, Unknown, Unknown, Unknown, Unknown, Unknown, Unknown, Unknown, Unknown, 
+Unknown, Unknown, Unknown, Unknown, Unknown, Unknown, Unknown, Unknown, Unknown, 
+Unknown, Unknown, Unknown, Unknown, Unknown, Unknown, Unknown, Unknown, Unknown, 
+Unknown, Unknown, Unknown, Unknown, Unknown, Unknown, Unknown, Unknown, Unknown, 
+Unknown, Unknown, Unknown, Unknown, Unknown, Unknown, Unknown, Unknown, Unknown, 
+Unknown, Unknown, Unknown, Unknown, Unknown, Unknown, Unknown, Unknown, Unknown, 
+Unknown, Unknown, Unknown, Unknown, Unknown, Unknown, Unknown, Unknown, Unknown, 
+Unknown, Unknown, Unknown, Unknown, Unknown, Unknown, Unknown, Unknown, Unknown, 
+Unknown, Unknown, Unknown, Unknown, Unknown, Unknown
+Logical Minimum: 0
+Logical Maximum: 1
+Report Size: 1
+Report Count: 128
+Input: 2 (Data,Variable,Absolute,No Wrap,Linear,Preferred State,No Null Position)
+
+Usage Page: 1 (Generic Desktop Controls)
+Usage: 57 (Hat Switch)
+Logical Minimum: 0
+Logical Maximum: 7
+Physical Minimum: 0
+Physical Maximum: 360
+Unit: 20
+Unit Exponent: 1
+Report Size: 4
+Report Count: 1
+Input: 66 (Data,Variable,Absolute,No Wrap,Linear,Preferred State,Null State)
+
+Usage: 0 (Undefined)
+Unit: 0
+Unit Exponent: 0
+Report Size: 4
+Report Count: 3
+Input: 1 (Constant,Array,Absolute,No Wrap,Linear,Preferred State,No Null Position)
+
+Usage Page: 1 (Generic Desktop Controls)
+Usage: 0 (Undefined)
+Report Size: 16
+Report Count: 1
+Input: 1 (Constant,Array,Absolute,No Wrap,Linear,Preferred State,No Null Position)
+
+Usage Page: 1 (Generic Desktop Controls)
+Usage: 0 (Undefined)
+Report Size: 16
+Report Count: 1
+Input: 1 (Constant,Array,Absolute,No Wrap,Linear,Preferred State,No Null Position)
+
+Usage Page: 1 (Generic Desktop Controls)
+Usage: 0 (Undefined)
+Report Size: 16
+Report Count: 1
+Input: 1 (Constant,Array,Absolute,No Wrap,Linear,Preferred State,No Null Position)
+
+Usage Page: 1 (Generic Desktop Controls)
+Usage: 0 (Undefined)
+Report Size: 8
+Report Count: 23
+Input: 1 (Constant,Array,Absolute,No Wrap,Linear,Preferred State,No Null Position)
+
+Report ID: 11
+Usage Page: 1 (Generic Desktop Controls)
+Usage: 0 (Undefined)
+Report Size: 8
+Report Count: 63
+Input: 1 (Constant,Array,Absolute,No Wrap,Linear,Preferred State,No Null Position)
+
+Report ID: 12
+Usage Page: 1 (Generic Desktop Controls)
+Usage: 0 (Undefined)
+Report Size: 8
+Report Count: 63
+Input: 1 (Constant,Array,Absolute,No Wrap,Linear,Preferred State,No Null Position)
+
+Report ID: 8
+Usage Page: 1 (Generic Desktop Controls)
+Usage: 0 (Undefined)
+Report Size: 8
+Report Count: 63
+Input: 1 (Constant,Array,Absolute,No Wrap,Linear,Preferred State,No Null Position)
+
+Logical Minimum: 0
+Logical Maximum: 255
+Physical Maximum: 255
+Report ID: 88
+Report Size: 8
+Report Count: 63
+Usage: 0 (Undefined)
+Output: 2 (Data,Variable,Absolute,No Wrap,Linear,Preferred State,No Null Position,Non Volatile)
+
+Report ID: 89
+Report Size: 8
+Report Count: 128
+Usage: 0 (Undefined)
+Feature: 2 (Data,Variable,Absolute,No Wrap,Linear,Preferred State,No Null Position)
+
+End Collection 
