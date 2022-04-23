@@ -24,6 +24,8 @@ and of course do not forget to assemble the APC220 modules.
 
 Run the serial monitor on the Rx Arduino and you will see joystick values being streamed.
 
+You can use other communication modules such as RF24L01. Just modify the APC parts in the repo and you will be good to go.
+
 ## Want to learn more?
 I referred to these websites:
 
