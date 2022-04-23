@@ -2,7 +2,7 @@
 Arduino Drone Controller using input from USB HID Joystick (VKBSim Gladiator NXT EVO)
 
 ## What this does
-Transmits X, Y, Rudder, Throttle axis values from a USB Joystick (connected to a transmitter Arduino) to a receiver Arduino. 
+Sends X, Y, Rudder, Throttle axis values from a USB Joystick (connected to a transmitter Arduino) to a receiver Arduino. 
 
 
 ## How this works
