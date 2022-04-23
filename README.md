@@ -10,7 +10,7 @@ Transmits X, Y, Rudder, Throttle axis values from a USB Joystick (connected to a
 Using the [USB Host Shield Library](https://github.com/felis/USB_Host_Shield_2.0),
 Tx (transmitter) parses X, Y, Rudder, Throttle values from USB Joystick HID Descriptor and sends them to Rx (receiver) using APC220 communications module (433MHz).
 
-This repo is a very slight modification of "le3dp" example from https://github.com/felis/USB_Host_Shield_2.0 so that it works with VKBSim Gladiator NXT EVO.
+This repo is a very slight modification of "le3dp" example from [USB Host Shield Library](https://github.com/felis/USB_Host_Shield_2.0) so that it works with VKBSim Gladiator NXT EVO.
 
 Currently does not support button presses. If you would like to add this features, go through the HID Descriptor (pretty messy for buttons) and edit the GamePadEventData struct in vkb.h accordingly.
 
