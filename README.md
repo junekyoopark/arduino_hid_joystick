@@ -10,7 +10,7 @@ Currently does not support button presses. If you would like to add this feature
 
 
 ## How to use
-Need 2 Arduinos, 1 USB Host Shield
+Need 2 Arduinos, 2 APC220 Modules, 1 USB Host Shield
 
 Assemble Arduino and USB Host shield. This Arduino runs the Tx. Just open tx_vkb.ino and flash it to the Arduino.
 The other arduino runs Rx. Open rx.ino and flash it to the Arduino.
