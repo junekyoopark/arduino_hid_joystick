@@ -17,12 +17,10 @@ Currently does not support button presses. If you would like to add this feature
 ## How to use
 Need 2 Arduinos, 2 APC220 Modules, 1 USB Host Shield
 
-Assemble Arduino and USB Host shield. This Arduino runs the Tx. Just open "tx_vkb.ino" and flash it to the Arduino.
-The other Arduino runs Rx. Open "rx.ino" and flash it to the Arduino.
-
-and of course do not forget to assemble the APC220 modules.
-
-Run the serial monitor on the Rx Arduino and you will see joystick values being streamed.
+1. Assemble Arduino and USB Host shield. This Arduino runs the Tx. Just open "tx_vkb.ino" and flash it to the Arduino.
+2. The other Arduino runs Rx. Open "rx.ino" and flash it to the Arduino.
+3. Of course do not forget to assemble the APC220 modules.
+4. Run the serial monitor on the Rx Arduino and you will see joystick values being streamed.
 
 You can use other communication modules such as RF24L01. Just modify the APC parts in the repo and you will be good to go.
 
