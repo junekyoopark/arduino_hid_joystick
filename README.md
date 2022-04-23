@@ -1,12 +1,12 @@
 # arduino_hid_joystick
-Arduino Drone Controller using input from USB HID Joystick
+Arduino Drone Controller using input from USB HID Joystick (VKBSim Gladiator NXT EVO)
 
 ## What it does
 Tx parses X, Y, Rudder, Throttle values from USB Joystick HID Descriptor and sends them to Rx using APC220 communications module (433MHz).
 
-Very slight modification of "le3dp" example from https://github.com/felis/USB_Host_Shield_2.0 so that it works with VKBSim Gladiator NXT Evo.
+Very slight modification of "le3dp" example from https://github.com/felis/USB_Host_Shield_2.0 so that it works with VKBSim Gladiator NXT EVO.
 
-Currently does not support button presses. If you would like to add this features, go through the HID Descriptor and edit the GamePadEventData struct in vkb.h accordingly.
+Currently does not support button presses. If you would like to add this features, go through the HID Descriptor (pretty messy for buttons) and edit the GamePadEventData struct in vkb.h accordingly.
 
 
 ## How to use
