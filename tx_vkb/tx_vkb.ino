@@ -1,4 +1,4 @@
-/* Simplified Logitech Extreme 3D Pro Joystick Report Parser */
+/*Joystick Report Parser */
 
 #include <usbhid.h>
 #include <hiduniversal.h>
@@ -44,39 +44,71 @@ void setup()
       ErrorMessage<uint8_t>(PSTR("SetReportParser"), 1  );
 }
 
+
+//these were initialized to save bandwidth
+int old_arr[5] = { 0 }; //initializing array in loop()
+int arr[5] = { 0 }; //initializing array in loop()
+
+int i; //initializing counter for going through elements in array
+int change = 0; //initializing variable. Checks whether there is a change in input or not. 
+//
+
 void loop()
 {
     Usb.Task();
     extern uint16_t x, y, rudder, throttle;
-    
-    Serial.print("X: ");
-    Serial.print(x);
-    Serial.print(" ");
+    arr[0] = x;
+    arr[1] = y;
+    arr[2] = rudder;
+    arr[3] = throttle;
+    arr[4] = 0;
+ 
+    for (i=0; i<=4; i++)
+    {  
+      if (old_arr[i] != arr[i])
+      {
+        change = 1;
+      }
+      old_arr[i] = arr[i];
+    }
 
-    APC.println((String)x + "///" + y + "///" + rudder + "///" + throttle);
+    if (change == 1)
+    {
+      Serial.println((String)arr[0] + "///" + arr[1] + "///" + arr[2] + "///" + arr[3] + "///" + arr[4]);
+      APC.println((String)arr[0] + "///" + arr[1] + "///" + arr[2] + "///" + arr[3] + "///" + arr[4]);
+    }
     
-  
-    Serial.print("Y: ");
-    Serial.print(y);
-    Serial.print(" ");
+    i = 0;
+    change = 0;
+    
+//    Serial.print("X: ");
+//    Serial.print(x);
+//    Serial.print(" ");
 //
-//    APC.print("///");
-//    APC.print(y);
-  
-    Serial.print("Rudder: ");
-    Serial.print(rudder);
-    Serial.print(" ");
-//
-//    APC.print("///");
-//    APC.print(rudder);
-
-    Serial.print("Throttle: ");
-    Serial.print(throttle);
-    Serial.print(" ");
+//    APC.println((String)x + "///" + y + "///" + rudder + "///" + throttle);
 //    
-//    APC.print("///");
-//    APC.print(throttle);
-
-    
-    Serial.println("");
+//  
+//    Serial.print("Y: ");
+//    Serial.print(y);
+//    Serial.print(" ");
+////
+////    APC.print("///");
+////    APC.print(y);
+//  
+//    Serial.print("Rudder: ");
+//    Serial.print(rudder);
+//    Serial.print(" ");
+////
+////    APC.print("///");
+////    APC.print(rudder);
+//
+//    Serial.print("Throttle: ");
+//    Serial.print(throttle);
+//    Serial.print(" ");
+////    
+////    APC.print("///");
+////    APC.print(throttle);
+//
+//    
+//    Serial.println("");
 }
