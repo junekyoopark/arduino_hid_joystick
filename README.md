@@ -17,6 +17,8 @@ Currently does not support button presses. If you would like to add this feature
 ## How to use
 Need 2 Arduinos, 2 nRF24L01 Modules, 1 USB Host Shield
 
+use the code in the "nrf" folder. Other files are deprecated (they use the APC220 module) but are here for archival purposes.
+
 1. Assemble Arduino and USB Host shield. This Arduino runs the Tx. Just open "tx_vkb.ino" and flash it to the Arduino.
 2. The other Arduino runs Rx. Open "rx.ino" and flash it to the Arduino.
 3. Of course do not forget to connect the nRF24L01 modules to respective pins.
