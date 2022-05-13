@@ -8,21 +8,21 @@ Sends X, Y, Rudder, Throttle axis values from a USB Joystick (connected to a tra
 ## How this works
 
 Using the [USB Host Shield Library](https://github.com/felis/USB_Host_Shield_2.0),
-Tx (transmitter) parses X, Y, Rudder, Throttle values from USB Joystick HID Report and sends them to Rx (receiver) using APC220 communications module (433MHz).
+Tx (transmitter) parses X, Y, Rudder, Throttle values from USB Joystick HID Report and sends them to Rx (receiver) using nRF24L01 communications module (2.4GHz).
 
 This repo is a very slight modification of "le3dp" example from [USB Host Shield Library](https://github.com/felis/USB_Host_Shield_2.0) so that it works with the VKBSim Gladiator NXT EVO Joystick.
 
 Currently does not support button presses. If you would like to add this feature, go through the HID Report Descriptor (or you can check "HID Descriptor.txt" I uploaded; may not be accurate) and edit the "GamePadEventData" struct in "vkb.h" accordingly.
 
 ## How to use
-Need 2 Arduinos, 2 APC220 Modules, 1 USB Host Shield
+Need 2 Arduinos, 2 nRF24L01 Modules, 1 USB Host Shield
 
 1. Assemble Arduino and USB Host shield. This Arduino runs the Tx. Just open "tx_vkb.ino" and flash it to the Arduino.
 2. The other Arduino runs Rx. Open "rx.ino" and flash it to the Arduino.
-3. Of course do not forget to assemble the APC220 modules.
+3. Of course do not forget to connect the nRF24L01 modules to respective pins.
 4. Run the serial monitor on the Rx Arduino and you will see joystick values being streamed.
 
-You can use other communication modules such as RF24L01. Just modify the APC parts in the repo and you will be good to go.
+You can use other communication modules such as APC220. Just modify the nRF24L01 parts in the repo and you will be good to go.
 
 ## Want to learn more?
 I referred to these websites:
