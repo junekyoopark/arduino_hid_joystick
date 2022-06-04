@@ -56,7 +56,6 @@ void setup()
 
 //these were initialized to save bandwidth
 
-int old_arr[4]; //initializing array in loop()
 int arr[4]; //initializing array in loop()
 
 int i; //initializing counter for going through elements in array
@@ -76,25 +75,12 @@ void loop()
     //since throttle is inversed
     arr[3] = (-throttle+2048) * 0.48828125 + 1000;
  
-    for (i=0; i<=3; i++)
-    {  
-      if (old_arr[i] != arr[i])
-      {
-        change = 1;
-      }
-      old_arr[i] = arr[i];
-    }
-
-    if (change == 1)
-    {
-      Serial.println((String)arr[0] + "///" + arr[1] + "///" + arr[2] + "///" + arr[3]);
-      
-      
-      radio.write(&arr, sizeof(arr));
-    }
     
-    i = 0;
-    change = 0;
+    Serial.println((String)arr[0] + "///" + arr[1] + "///" + arr[2] + "///" + arr[3]);
+      
+      
+    radio.write(&arr, sizeof(arr));
+
     
 //    Serial.print("X: ");
 //    Serial.print(x);
