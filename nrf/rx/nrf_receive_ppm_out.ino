@@ -84,7 +84,7 @@ void loop() {
   }
 
   //Serial.println((String)ppm[0] + ppm[1] + ppm[2] + ppm[3]);
-
+  delay(5);
 
 }
 
