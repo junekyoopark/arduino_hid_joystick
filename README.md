@@ -15,7 +15,7 @@ This repo is a very slight modification of "le3dp" example from [USB Host Shield
 Currently does not support button presses. If you would like to add this feature, go through the HID Report Descriptor (or you can check "HID Descriptor.txt" I uploaded; may not be accurate) and edit the "GamePadEventData" struct in "vkb.h" accordingly.
 
 ## How to use
-The current version of the code only utilizes files inside the "tx_vkb" folder. No need to care about other files as they are from a depracated method (left here for archival purposes).
+The current version of the code only utilizes files inside the "tx_vkb" folder. No need to care about other files as they are from a depracated method (tried to use an nRF24L01 PA+LNA module; left here for archival purposes).
 1. Download the folder, flash tx_vkb.ino onto an Arduino Uno. 
 2. Setup a FlySky FS-i6 RC Transmitter such that it is in "Trainer Mode". This way the RC Transmitter accepts PPM input.
 3. Using a jumper cable or any other compatible cable (the PPM port on the RC Transmitter is a Mini-DIN 4 pin), connect the GND and SIG cables. (Arduino GND to RC GND, Arduino SigPin to RC top right port).
