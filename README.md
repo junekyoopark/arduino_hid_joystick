@@ -4,7 +4,7 @@ Arduino Drone Controller using input from USB HID Joystick (VKBSim Gladiator NXT
 ## What this does
 Sends X, Y, Rudder, Throttle axis values from a USB Joystick to a RC Transmitter.
 
-A version that sends axis values from an Arduino to another Arduino is archived inside the "nrf" folder. Those files utilize the Arduino Uno and the nRF24L01 modules. That version was archived due to connection issues with the nRF24L01 modules.
+A version that sends axis values from an Arduino to another Arduino is archived inside the "nrf" folder. Those files utilize 2 Arduino Unos and 2 nRF24L01 modules. That version was archived due to connection issues with the nRF24L01 modules.
 
 ## How this works
 
